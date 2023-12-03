@@ -198,7 +198,7 @@ namespace Tyuiu.PostikaAO.Sprint6.Task2.V1
             this.dataGridViewFunction_PAO.RowHeadersVisible = false;
             this.dataGridViewFunction_PAO.RowHeadersWidth = 51;
             this.dataGridViewFunction_PAO.RowTemplate.Height = 24;
-            this.dataGridViewFunction_PAO.Size = new System.Drawing.Size(125, 303);
+            this.dataGridViewFunction_PAO.Size = new System.Drawing.Size(119, 303);
             this.dataGridViewFunction_PAO.TabIndex = 0;
             this.dataGridViewFunction_PAO.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
