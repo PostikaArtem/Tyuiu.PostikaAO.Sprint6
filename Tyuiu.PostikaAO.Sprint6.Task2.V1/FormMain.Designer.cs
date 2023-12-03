@@ -29,9 +29,9 @@ namespace Tyuiu.PostikaAO.Sprint6.Task2.V1
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxCondition_PAO = new System.Windows.Forms.GroupBox();
             this.textBoxTask = new System.Windows.Forms.TextBox();
             this.groupBoxInPutData_PAO = new System.Windows.Forms.GroupBox();
@@ -42,16 +42,16 @@ namespace Tyuiu.PostikaAO.Sprint6.Task2.V1
             this.buttonDone_PAO = new System.Windows.Forms.Button();
             this.buttonHelp_PAO = new System.Windows.Forms.Button();
             this.groupBoxOutPutData_PAO = new System.Windows.Forms.GroupBox();
+            this.chartFunction_PAO = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.labelResult_PAO = new System.Windows.Forms.Label();
             this.dataGridViewFunction_PAO = new System.Windows.Forms.DataGridView();
             this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Y = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chartFunction_PAO = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBoxCondition_PAO.SuspendLayout();
             this.groupBoxInPutData_PAO.SuspendLayout();
             this.groupBoxOutPutData_PAO.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_PAO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_PAO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_PAO)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxCondition_PAO
@@ -159,6 +159,25 @@ namespace Tyuiu.PostikaAO.Sprint6.Task2.V1
             this.groupBoxOutPutData_PAO.TabStop = false;
             this.groupBoxOutPutData_PAO.Text = "Вывод данных:";
             // 
+            // chartFunction_PAO
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartFunction_PAO.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartFunction_PAO.Legends.Add(legend1);
+            this.chartFunction_PAO.Location = new System.Drawing.Point(151, 53);
+            this.chartFunction_PAO.Name = "chartFunction_PAO";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartFunction_PAO.Series.Add(series1);
+            this.chartFunction_PAO.Size = new System.Drawing.Size(491, 300);
+            this.chartFunction_PAO.TabIndex = 2;
+            this.chartFunction_PAO.Text = "chart1";
+            this.chartFunction_PAO.Click += new System.EventHandler(this.chartFunction_PAO_Click);
+            // 
             // labelResult_PAO
             // 
             this.labelResult_PAO.AutoSize = true;
@@ -186,32 +205,16 @@ namespace Tyuiu.PostikaAO.Sprint6.Task2.V1
             // X
             // 
             this.X.HeaderText = "X";
+            this.X.MinimumWidth = 6;
             this.X.Name = "X";
             this.X.Width = 50;
             // 
             // Y
             // 
             this.Y.HeaderText = "F(X)";
+            this.Y.MinimumWidth = 6;
             this.Y.Name = "Y";
             this.Y.Width = 50;
-            // 
-            // chartFunction_PAO
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.chartFunction_PAO.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartFunction_PAO.Legends.Add(legend3);
-            this.chartFunction_PAO.Location = new System.Drawing.Point(151, 53);
-            this.chartFunction_PAO.Name = "chartFunction_PAO";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.IsVisibleInLegend = false;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartFunction_PAO.Series.Add(series3);
-            this.chartFunction_PAO.Size = new System.Drawing.Size(491, 300);
-            this.chartFunction_PAO.TabIndex = 2;
-            this.chartFunction_PAO.Text = "chart1";
             // 
             // FormMain
             // 
@@ -232,8 +235,8 @@ namespace Tyuiu.PostikaAO.Sprint6.Task2.V1
             this.groupBoxInPutData_PAO.PerformLayout();
             this.groupBoxOutPutData_PAO.ResumeLayout(false);
             this.groupBoxOutPutData_PAO.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_PAO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_PAO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_PAO)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -84,5 +84,10 @@ namespace Tyuiu.PostikaAO.Sprint6.Task2.V1
         {
             buttonDone_PAO.BackColor = Color.Green;
         }
+
+        private void chartFunction_PAO_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
