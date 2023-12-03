@@ -60,7 +60,7 @@ namespace Tyuiu.PostikaAO.Sprint6.Task1.V25
             // 
             this.groupBoxOutPutData_PAO.Controls.Add(this.labelResult_PAO);
             this.groupBoxOutPutData_PAO.Controls.Add(this.textBoxResult_PAO);
-            this.groupBoxOutPutData_PAO.Location = new System.Drawing.Point(717, 23);
+            this.groupBoxOutPutData_PAO.Location = new System.Drawing.Point(704, 27);
             this.groupBoxOutPutData_PAO.Name = "groupBoxOutPutData_PAO";
             this.groupBoxOutPutData_PAO.Size = new System.Drawing.Size(344, 348);
             this.groupBoxOutPutData_PAO.TabIndex = 1;
@@ -174,7 +174,7 @@ namespace Tyuiu.PostikaAO.Sprint6.Task1.V25
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 387);
+            this.ClientSize = new System.Drawing.Size(1062, 387);
             this.Controls.Add(this.buttonHelp_PAO);
             this.Controls.Add(this.buttonDone_PAO);
             this.Controls.Add(this.groupBoxInPutData_PAO);

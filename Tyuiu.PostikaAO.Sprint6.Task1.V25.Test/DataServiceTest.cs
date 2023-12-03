@@ -11,6 +11,7 @@ namespace Tyuiu.PostikaAO.Sprint6.Task1.V25.Test
         [TestMethod]
         public void ValidGetMassFunction()
         {
+           
             DataService ds = new DataService();
 
             int startValue = -1;

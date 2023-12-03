@@ -23,8 +23,7 @@ namespace Tyuiu.PostikaAO.Sprint6.Task1.V25.Lib
                 valueArray[count] = Math.Round(y,2);
                 count++;
             }
-
-            return valueArray;
+             return valueArray;
         }
     }
 }
