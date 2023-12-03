@@ -31,12 +31,12 @@ namespace Tyuiu.PostikaAO.Sprint6.Task0.V29
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBoxCondition_PAO = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.textBoxTask_PAO = new System.Windows.Forms.TextBox();
             this.pictureBoxFormula_PAO = new System.Windows.Forms.PictureBox();
+            this.textBoxTask_PAO = new System.Windows.Forms.TextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBoxInPutData_PAO = new System.Windows.Forms.GroupBox();
-            this.textBoxVarX_PAO = new System.Windows.Forms.TextBox();
             this.labelVarX_PAO = new System.Windows.Forms.Label();
+            this.textBoxVarX_PAO = new System.Windows.Forms.TextBox();
             this.textBoxResult_PAO = new System.Windows.Forms.TextBox();
             this.groupBoxOutPutData_PAO = new System.Windows.Forms.GroupBox();
             this.labelResult_PAO = new System.Windows.Forms.Label();
@@ -59,6 +59,15 @@ namespace Tyuiu.PostikaAO.Sprint6.Task0.V29
             this.groupBoxCondition_PAO.TabStop = false;
             this.groupBoxCondition_PAO.Text = "Условие";
             // 
+            // pictureBoxFormula_PAO
+            // 
+            this.pictureBoxFormula_PAO.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula_PAO.Image")));
+            this.pictureBoxFormula_PAO.Location = new System.Drawing.Point(440, 21);
+            this.pictureBoxFormula_PAO.Name = "pictureBoxFormula_PAO";
+            this.pictureBoxFormula_PAO.Size = new System.Drawing.Size(186, 132);
+            this.pictureBoxFormula_PAO.TabIndex = 1;
+            this.pictureBoxFormula_PAO.TabStop = false;
+            // 
             // textBoxTask_PAO
             // 
             this.textBoxTask_PAO.BackColor = System.Drawing.SystemColors.Control;
@@ -68,15 +77,6 @@ namespace Tyuiu.PostikaAO.Sprint6.Task0.V29
             this.textBoxTask_PAO.Size = new System.Drawing.Size(400, 132);
             this.textBoxTask_PAO.TabIndex = 0;
             this.textBoxTask_PAO.Text = "Вычислите выражение по формуле";
-            // 
-            // pictureBoxFormula_PAO
-            // 
-            this.pictureBoxFormula_PAO.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula_PAO.Image")));
-            this.pictureBoxFormula_PAO.Location = new System.Drawing.Point(440, 21);
-            this.pictureBoxFormula_PAO.Name = "pictureBoxFormula_PAO";
-            this.pictureBoxFormula_PAO.Size = new System.Drawing.Size(186, 132);
-            this.pictureBoxFormula_PAO.TabIndex = 1;
-            this.pictureBoxFormula_PAO.TabStop = false;
             // 
             // groupBoxInPutData_PAO
             // 
@@ -89,13 +89,6 @@ namespace Tyuiu.PostikaAO.Sprint6.Task0.V29
             this.groupBoxInPutData_PAO.TabStop = false;
             this.groupBoxInPutData_PAO.Text = "Ввод данных";
             // 
-            // textBoxVarX_PAO
-            // 
-            this.textBoxVarX_PAO.Location = new System.Drawing.Point(60, 86);
-            this.textBoxVarX_PAO.Name = "textBoxVarX_PAO";
-            this.textBoxVarX_PAO.Size = new System.Drawing.Size(144, 22);
-            this.textBoxVarX_PAO.TabIndex = 0;
-            // 
             // labelVarX_PAO
             // 
             this.labelVarX_PAO.AutoSize = true;
@@ -104,6 +97,13 @@ namespace Tyuiu.PostikaAO.Sprint6.Task0.V29
             this.labelVarX_PAO.Size = new System.Drawing.Size(108, 17);
             this.labelVarX_PAO.TabIndex = 2;
             this.labelVarX_PAO.Text = "Переменная X:";
+            // 
+            // textBoxVarX_PAO
+            // 
+            this.textBoxVarX_PAO.Location = new System.Drawing.Point(60, 86);
+            this.textBoxVarX_PAO.Name = "textBoxVarX_PAO";
+            this.textBoxVarX_PAO.Size = new System.Drawing.Size(144, 22);
+            this.textBoxVarX_PAO.TabIndex = 0;
             // 
             // textBoxResult_PAO
             // 
@@ -159,12 +159,15 @@ namespace Tyuiu.PostikaAO.Sprint6.Task0.V29
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(672, 450);
             this.Controls.Add(this.buttonHelp_PAO);
             this.Controls.Add(this.buttonDone_PAO);
             this.Controls.Add(this.groupBoxOutPutData_PAO);
             this.Controls.Add(this.groupBoxInPutData_PAO);
             this.Controls.Add(this.groupBoxCondition_PAO);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -192,8 +195,8 @@ namespace Tyuiu.PostikaAO.Sprint6.Task0.V29
         private System.Windows.Forms.TextBox textBoxResult_PAO;
         private System.Windows.Forms.GroupBox groupBoxOutPutData_PAO;
         private System.Windows.Forms.Label labelResult_PAO;
-        private System.Windows.Forms.Button buttonDone_PAO;
         private System.Windows.Forms.Button buttonHelp_PAO;
+        private System.Windows.Forms.Button buttonDone_PAO;
     }
 }
 
