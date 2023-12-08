@@ -62,9 +62,9 @@ namespace Tyuiu.PostikaAO.Sprint6.Task0.V29
             // pictureBoxFormula_PAO
             // 
             this.pictureBoxFormula_PAO.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula_PAO.Image")));
-            this.pictureBoxFormula_PAO.Location = new System.Drawing.Point(440, 21);
+            this.pictureBoxFormula_PAO.Location = new System.Drawing.Point(428, 21);
             this.pictureBoxFormula_PAO.Name = "pictureBoxFormula_PAO";
-            this.pictureBoxFormula_PAO.Size = new System.Drawing.Size(186, 132);
+            this.pictureBoxFormula_PAO.Size = new System.Drawing.Size(198, 132);
             this.pictureBoxFormula_PAO.TabIndex = 1;
             this.pictureBoxFormula_PAO.TabStop = false;
             // 
