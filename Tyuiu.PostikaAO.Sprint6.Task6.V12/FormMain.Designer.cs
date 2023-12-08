@@ -122,7 +122,7 @@ namespace Tyuiu.PostikaAO.Sprint6.Task6.V12
             this.textBoxTask6_PAO.Location = new System.Drawing.Point(3, 18);
             this.textBoxTask6_PAO.Multiline = true;
             this.textBoxTask6_PAO.Name = "textBoxTask6_PAO";
-            this.textBoxTask6_PAO.Size = new System.Drawing.Size(794, 69);
+            this.textBoxTask6_PAO.Size = new System.Drawing.Size(794, 56);
             this.textBoxTask6_PAO.TabIndex = 0;
             this.textBoxTask6_PAO.Text = resources.GetString("textBoxTask6_PAO.Text");
             // 
