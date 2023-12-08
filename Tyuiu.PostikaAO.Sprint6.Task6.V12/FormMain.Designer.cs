@@ -32,6 +32,9 @@ namespace Tyuiu.PostikaAO.Sprint6.Task6.V12
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelTop_PAO = new System.Windows.Forms.Panel();
+            this.buttonHelp_PAO = new System.Windows.Forms.Button();
+            this.buttonDone_PAO = new System.Windows.Forms.Button();
+            this.buttonOpenFile_PAO = new System.Windows.Forms.Button();
             this.groupBoxCondition_PAO = new System.Windows.Forms.GroupBox();
             this.textBoxTask6_PAO = new System.Windows.Forms.TextBox();
             this.panelLeft_PAO = new System.Windows.Forms.Panel();
@@ -43,9 +46,6 @@ namespace Tyuiu.PostikaAO.Sprint6.Task6.V12
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.openFileDialogTask6_PAO = new System.Windows.Forms.OpenFileDialog();
             this.toolTipHint_PAO = new System.Windows.Forms.ToolTip(this.components);
-            this.buttonHelp_PAO = new System.Windows.Forms.Button();
-            this.buttonDone_PAO = new System.Windows.Forms.Button();
-            this.buttonOpenFile_PAO = new System.Windows.Forms.Button();
             this.panelTop_PAO.SuspendLayout();
             this.groupBoxCondition_PAO.SuspendLayout();
             this.panelLeft_PAO.SuspendLayout();
@@ -65,6 +65,44 @@ namespace Tyuiu.PostikaAO.Sprint6.Task6.V12
             this.panelTop_PAO.Name = "panelTop_PAO";
             this.panelTop_PAO.Size = new System.Drawing.Size(800, 160);
             this.panelTop_PAO.TabIndex = 0;
+            // 
+            // buttonHelp_PAO
+            // 
+            this.buttonHelp_PAO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp_PAO.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonHelp_PAO.Image = global::Tyuiu.PostikaAO.Sprint6.Task6.V12.Properties.Resources.help;
+            this.buttonHelp_PAO.Location = new System.Drawing.Point(715, 12);
+            this.buttonHelp_PAO.Name = "buttonHelp_PAO";
+            this.buttonHelp_PAO.Size = new System.Drawing.Size(73, 57);
+            this.buttonHelp_PAO.TabIndex = 3;
+            this.toolTipHint_PAO.SetToolTip(this.buttonHelp_PAO, "Сведение о программе ");
+            this.buttonHelp_PAO.UseVisualStyleBackColor = true;
+            this.buttonHelp_PAO.Click += new System.EventHandler(this.buttonHelp_PAO_Click);
+            // 
+            // buttonDone_PAO
+            // 
+            this.buttonDone_PAO.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDone_PAO.Image = global::Tyuiu.PostikaAO.Sprint6.Task6.V12.Properties.Resources.page_go;
+            this.buttonDone_PAO.Location = new System.Drawing.Point(103, 12);
+            this.buttonDone_PAO.Name = "buttonDone_PAO";
+            this.buttonDone_PAO.Size = new System.Drawing.Size(95, 57);
+            this.buttonDone_PAO.TabIndex = 2;
+            this.toolTipHint_PAO.SetToolTip(this.buttonDone_PAO, "Производит поиск в файле вхождений символов \"w\"\r\nи конкатенирует строки в которых" +
+        " находятся эти символы");
+            this.buttonDone_PAO.UseVisualStyleBackColor = true;
+            this.buttonDone_PAO.Click += new System.EventHandler(this.buttonDone_PAO_Click);
+            // 
+            // buttonOpenFile_PAO
+            // 
+            this.buttonOpenFile_PAO.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOpenFile_PAO.Image = global::Tyuiu.PostikaAO.Sprint6.Task6.V12.Properties.Resources.folder_page_white;
+            this.buttonOpenFile_PAO.Location = new System.Drawing.Point(12, 12);
+            this.buttonOpenFile_PAO.Name = "buttonOpenFile_PAO";
+            this.buttonOpenFile_PAO.Size = new System.Drawing.Size(85, 57);
+            this.buttonOpenFile_PAO.TabIndex = 1;
+            this.toolTipHint_PAO.SetToolTip(this.buttonOpenFile_PAO, "Открыть файл\r\nВыберите нужный файл для обработки");
+            this.buttonOpenFile_PAO.UseVisualStyleBackColor = true;
+            this.buttonOpenFile_PAO.Click += new System.EventHandler(this.buttonOpenFile_PAO_Click);
             // 
             // groupBoxCondition_PAO
             // 
@@ -165,45 +203,6 @@ namespace Tyuiu.PostikaAO.Sprint6.Task6.V12
             // 
             this.toolTipHint_PAO.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipHint_PAO.ToolTipTitle = "Подсказка";
-            // 
-            // buttonHelp_PAO
-            // 
-            this.buttonHelp_PAO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonHelp_PAO.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonHelp_PAO.Image = global::Tyuiu.PostikaAO.Sprint6.Task6.V12.Properties.Resources.help;
-            this.buttonHelp_PAO.Location = new System.Drawing.Point(715, 12);
-            this.buttonHelp_PAO.Name = "buttonHelp_PAO";
-            this.buttonHelp_PAO.Size = new System.Drawing.Size(73, 57);
-            this.buttonHelp_PAO.TabIndex = 3;
-            this.toolTipHint_PAO.SetToolTip(this.buttonHelp_PAO, "Сведение о программе ");
-            this.buttonHelp_PAO.UseVisualStyleBackColor = true;
-            this.buttonHelp_PAO.Click += new System.EventHandler(this.buttonHelp_PAO_Click);
-            // 
-            // buttonDone_PAO
-            // 
-            this.buttonDone_PAO.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDone_PAO.Enabled = false;
-            this.buttonDone_PAO.Image = global::Tyuiu.PostikaAO.Sprint6.Task6.V12.Properties.Resources.page_go;
-            this.buttonDone_PAO.Location = new System.Drawing.Point(103, 12);
-            this.buttonDone_PAO.Name = "buttonDone_PAO";
-            this.buttonDone_PAO.Size = new System.Drawing.Size(95, 57);
-            this.buttonDone_PAO.TabIndex = 2;
-            this.toolTipHint_PAO.SetToolTip(this.buttonDone_PAO, "Производит поиск в файле вхождений символов \"w\"\r\nи конкатенирует строки в которых" +
-        " находятся эти символы");
-            this.buttonDone_PAO.UseVisualStyleBackColor = true;
-            this.buttonDone_PAO.Click += new System.EventHandler(this.buttonDone_PAO_Click);
-            // 
-            // buttonOpenFile_PAO
-            // 
-            this.buttonOpenFile_PAO.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonOpenFile_PAO.Image = global::Tyuiu.PostikaAO.Sprint6.Task6.V12.Properties.Resources.folder_page_white;
-            this.buttonOpenFile_PAO.Location = new System.Drawing.Point(12, 12);
-            this.buttonOpenFile_PAO.Name = "buttonOpenFile_PAO";
-            this.buttonOpenFile_PAO.Size = new System.Drawing.Size(85, 57);
-            this.buttonOpenFile_PAO.TabIndex = 1;
-            this.toolTipHint_PAO.SetToolTip(this.buttonOpenFile_PAO, "Открыть файл\r\nВыберите нужный файл для обработки");
-            this.buttonOpenFile_PAO.UseVisualStyleBackColor = true;
-            this.buttonOpenFile_PAO.Click += new System.EventHandler(this.buttonOpenFile_PAO_Click);
             // 
             // FormMain
             // 
