@@ -47,6 +47,7 @@ namespace Tyuiu.PostikaAO.Sprint6.Task7.V13
             // 
             // buttonOK_PAO
             // 
+            this.buttonOK_PAO.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOK_PAO.Location = new System.Drawing.Point(470, 203);
             this.buttonOK_PAO.Name = "buttonOK_PAO";
             this.buttonOK_PAO.Size = new System.Drawing.Size(91, 31);
