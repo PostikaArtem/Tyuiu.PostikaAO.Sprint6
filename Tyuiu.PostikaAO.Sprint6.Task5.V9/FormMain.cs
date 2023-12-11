@@ -38,7 +38,8 @@ namespace Tyuiu.PostikaAO.Sprint6.Task5.V9
 
             for(int i=0; i < numsMass.Length; i++)
             {
-                dataGridViewNum_PAO.Rows.Add(Convert.ToString(i), Convert.ToString(numsMass[i]));
+                
+                dataGridViewNum_PAO.Rows.Add(Convert.ToString(i+1), Convert.ToString(numsMass[i]));
                 chartDiag_PAO.Series[0].Points.AddXY(i, numsMass[i]);
             }
             
@@ -106,5 +107,8 @@ namespace Tyuiu.PostikaAO.Sprint6.Task5.V9
         {
             buttonHelp_PAO.BackColor = Color.Yellow;
         }
+
+        
+        
     }
 }
